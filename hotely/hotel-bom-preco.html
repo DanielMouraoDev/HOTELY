@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bom Preço - Seu Site de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8df0e0096.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+<main>
+    <section id="hotel-bom-preco">
+        <div class="container">
+            <h1>Hotel Bom Preço</h1>
+
+            <div class="carousel"> 
+                <img src="IMAGENS/bom preco.jpeg" alt="Foto 1 do Hotel Bom Preço">
+                <img src="IMAGENS/bom preco 2.jpeg" alt="Foto 2 do Hotel Bom Preço">
+                <img src="IMAGENS/bom preo 3.jpeg" alt="Foto 3 do Hotel Bom Preço">
+            </div>
+
+            <p>Hospedagem com excelente custo-benefício perto da praia de Leblon. Quartos confortáveis, ambiente acolhedor e serviços essenciais para uma estadia agradável sem gastar muito. Oferecemos quartos individuais, duplos e triplos, com opções de banheiro privativo ou compartilhado. Nosso café da manhã é incluso na diária e temos Wi-Fi gratuito em todas as áreas do hotel. Ideal para viajantes que buscam praticidade e economia, sem abrir mão do conforto e da boa localização.</p>
+
+            <h2>Comodidades</h2>
+            <ul>
+                <li>Café da manhã incluso</li>
+                <li>Wi-Fi gratuito em todas as áreas</li>
+                <li>Recepção 24 horas</li>
+                <li>Quartos com banheiro privativo ou compartilhado</li>
+                <li>Serviço de limpeza diário</li>
+                <li>Sala de TV compartilhada</li>
+                <li>Cozinha comunitária com microondas e geladeira</li>
+                <li>Mapa da cidade e informações turísticas</li>
+            </ul>
+
+            <h2>Localização</h2>
+            <p>Rua Ataulfo de Paiva, 101 - Leblon, Rio de Janeiro</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.310674037964!2d-43.21568408502228!3d-22.98710548500615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e50a988457f%3A0x739f0ddb4416a04a!2sR.%20Ataulfo%20de%20Paiva%2C%20101%20-%20Leblon%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022440-030!5e0!3m2!1spt-BR!2sbr!4v1697412253662!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2>Contato</h2>
+            <p>Telefone: (21) 8765-4321</p>
+            <p>Email: contato@hotelbompreco.com</p>
+
+            <h2>Quartos e Preços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Quarto</th>
+                        <th>Descrição</th>
+                        <th>Preço por noite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Individual com Banheiro Compartilhado</td>
+                        <td>Quarto com cama de solteiro, ventilador de teto e acesso a banheiro compartilhado no corredor.</td>
+                        <td>R$ 120</td>
+                    </tr>
+                    <tr>
+                        <td>Duplo com Banheiro Privativo</td>
+                        <td>Quarto com cama de casal, ar-condicionado, TV e banheiro privativo.</td>
+                        <td>R$ 200</td>
+                    </tr>
+                    <tr>
+                        <td>Triplo com Banheiro Privativo</td>
+                        <td>Quarto com três camas de solteiro, ar-condicionado, TV e banheiro privativo.</td>
+                        <td>R$ 280</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Formulário de Reserva</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data_checkin">Data de Check-in:</label>
+                <input type="date" id="data_checkin" name="data_checkin">
+
+                <label for="data_checkout">Data de Check-out:</label>
+                <input type="date" id="data_checkout" name="data_checkout" >
+
+                <label for="tipo_quarto">Tipo de Quarto:</label>
+                <select id="tipo_quarto" name="tipo_quarto">
+                    <option value="individual-comp">Individual com Banheiro Compartilhado</option>
+                    <option value="duplo-priv">Duplo com Banheiro Privativo</option>
+                    <option value="triplo-priv">Triplo com Banheiro Privativo</option>
+                </select>
+
+                <button type="submit">Reservar</button>
+            </form>
+
+            <h2>Depoimentos</h2>
+            <p>"O Hotel Bom Preço oferece um ótimo custo-benefício! Fiquei surpreso com o conforto e a limpeza do quarto, além da localização excelente. Recomendo para quem busca economizar sem abrir mão da qualidade." - Marcos</p>
+            <p>"Adorei a estadia! O café da manhã é simples, mas gostoso, e a equipe é muito simpática e prestativa. Voltarei com certeza!" - Ana</p>
+        </div>
+    </section>
+</main>
+<script src="header.js"></script>
+<script src="rodape.js"></script>
+
+</body>
+</html>

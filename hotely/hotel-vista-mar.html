@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Vista Mar - Seu Site de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/c8df0e0096.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<main>
+    <section id="hotel-vista-mar">
+        <div class="container">
+            <h1>Hotel Vista Mar</h1>
+
+            <div class="carousel"> 
+                <img src="IMAGENS/vista para o mar 1.jpeg" alt="Foto 1 do Hotel Vista Mar">
+                <img src="IMAGENS/vista para o mar 2.jpeg" alt="Foto 2 do Hotel Vista Mar">
+                <img src="IMAGENS/vista para o mar 3.jpeg" alt="Foto 3 do Hotel Vista Mar">
+            </div>
+
+            <p>Acorde com o nascer do sol e a beleza da praia de Copacabana neste hotel com vista panorâmica deslumbrante. Desfrute de conforto, elegância e serviços exclusivos em uma localização privilegiada. Relaxe em nossa piscina com borda infinita, saboreie a culinária internacional em nosso restaurante e aproveite o serviço de praia com espreguiçadeiras e guarda-sóis. Nossas acomodações são equipadas com ar-condicionado, Wi-Fi, TV a cabo e frigobar. Oferecemos quartos Standard, Deluxe e Suítes, todos com vista para o mar.</p>
+
+            <h2>Comodidades</h2>
+            <ul>
+                <li>Piscina com borda infinita</li>
+                <li>Restaurante com culinária internacional</li>
+                <li>Bar</li>
+                <li>Academia</li>
+                <li>Spa</li>
+                <li>Serviço de praia com espreguiçadeiras e guarda-sóis</li>
+                <li>Wi-Fi gratuito</li>
+                <li>Estacionamento</li>
+            </ul>
+
+            <h2>Localização</h2>
+            <p>Avenida Atlântica, 1234 - Copacabana, Rio de Janeiro</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.149789097306!2d-43.19299868502237!3d-22.96999978500882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e513b77ddb7%3A0x77209680092ff28!2sAv.%20Atl%C3%A2ntica%2C%201234%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022021-001!5e0!3m2!1spt-BR!2sbr!4v1697409480122!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2>Contato</h2>
+            <p>Telefone: (21) 1234-5678</p>
+            <p>Email: contato@hotelvistamar.com</p>
+
+            <h2>Quartos e Preços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Quarto</th>
+                        <th>Descrição</th>
+                        <th>Preço por noite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standard</td>
+                        <td>Quarto com vista para o mar, cama de casal ou duas camas de solteiro, ar-condicionado, Wi-Fi, TV a cabo e frigobar.</td>
+                        <td>R$ 300</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe</td>
+                        <td>Quarto com vista panorâmica para o mar, cama king-size, varanda, ar-condicionado, Wi-Fi, TV a cabo, frigobar e banheira de hidromassagem.</td>
+                        <td>R$ 500</td>
+                    </tr>
+                    <tr>
+                        <td>Suíte</td>
+                        <td>Suíte com vista espetacular para o mar, sala de estar, cama king-size, varanda, ar-condicionado, Wi-Fi, TV a cabo, frigobar, banheira de hidromassagem e amenities VIP.</td>
+                        <td>R$ 800</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Formulário de Reserva</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data_checkin">Data de Check-in:</label>
+                <input type="date" id="data_checkin" name="data_checkin" >
+
+                <label for="data_checkout">Data de Check-out:</label>
+                <input type="date" id="data_checkout" name="data_checkout" >
+
+                <label for="tipo_quarto">Tipo de Quarto:</label>
+                <select id="tipo_quarto" name="tipo_quarto">
+                    <option value="Standard">Standard</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="suite">Suíte</option>
+                </select>
+
+                <button type="submit">Reservar</button>
+            </form>
+
+
+            <h2>Depoimentos</h2>
+            <p>"Adoramos a estadia no Hotel Vista Mar! A vista é incrível e o serviço impecável. Recomendo!" - Maria Silva</p>
+            <p>"Hotel maravilhoso, com localização perfeita e funcionários muito atenciosos. Voltaremos com certeza!" - João Souza</p>
+        </div>
+    </section>
+</main>
+<script src="header.js"></script>
+<script src="rodape.js"></script>
+
+</body>
+</html>

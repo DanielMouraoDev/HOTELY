@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Charmoso Boutique - Seu Site de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/c8df0e0096.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<main>
+    <section id="hotel-charmoso-boutique">
+        <div class="container">
+            <h1>Hotel Charmoso Boutique</h1>
+
+            <div class="carousel"> 
+                <img src="IMAGENS/boutique 1.jpeg"Foto 1 do Hotel Charmoso Boutique">
+                <img src="IMAGENS/boutique 2.jpeg" alt="Foto 2 do Hotel Charmoso Boutique">
+                <img src="IMAGENS/boutique 3.jpeg" alt="Foto 3 do Hotel Charmoso Boutique">
+            </div>
+
+            <p>Encante-se com este hotel boutique no coração de Ipanema, a poucos passos da praia. Design moderno, ambiente aconchegante e atendimento personalizado para uma experiência inesquecível. Nossos quartos são decorados com peças de artistas locais e oferecem todo o conforto que você precisa para relaxar após um dia explorando a cidade. Desfrute do nosso terraço com vista para o mar e do nosso café da manhã com produtos frescos e orgânicos.</p>
+
+            <h2>Comodidades</h2>
+            <ul>
+                <li>Café da manhã com produtos frescos e orgânicos</li>
+                <li>Terraço com vista para o mar</li>
+                <li>Wi-Fi gratuito</li>
+                <li>Serviço de concierge</li>
+                <li>Quartos com decoração exclusiva</li>
+                <li>Bar</li>
+                <li>Recepção 24 horas</li>
+                <li>Serviço de quarto</li>
+            </ul>
+
+            <h2>Localização</h2>
+            <p>Rua Visconde de Pirajá, 567 - Ipanema, Rio de Janeiro</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.279016759273!2d-43.20457298502232!3d-22.98403818500689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e50b0591397%3A0x469c7c9dd438e439!2sR.%20Visc.%20de%20Piraj%C3%A1%2C%20567%20-%20Ipanema%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022410-003!5e0!3m2!1spt-BR!2sbr!4v1697410800504!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2>Contato</h2>
+            <p>Telefone: (21) 9876-5432</p>
+            <p>Email: contato@hotelcharmosoboutique.com</p>
+
+            <h2>Quartos e Preços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Quarto</th>
+                        <th>Descrição</th>
+                        <th>Preço por noite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Suíte Luxo</td>
+                        <td>Suíte com cama king-size, varanda com vista para o mar, ar-condicionado, Wi-Fi, TV a cabo, frigobar e banheira de hidromassagem.</td>
+                        <td>R$ 600</td>
+                    </tr>
+                    <tr>
+                        <td>Quarto Duplo Deluxe</td>
+                        <td>Quarto com duas camas de casal, vista para a cidade, ar-condicionado, Wi-Fi, TV a cabo e frigobar.</td>
+                        <td>R$ 400</td>
+                    </tr>
+                    <tr>
+                        <td>Quarto Individual Standard</td>
+                        <td>Quarto com cama de solteiro, ar-condicionado, Wi-Fi, TV a cabo e frigobar.</td>
+                        <td>R$ 200</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Formulário de Reserva</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data_checkin">Data de Check-in:</label>
+                <input type="date" id="data_checkin" name="data_checkin" >
+
+                <label for="data_checkout">Data de Check-out:</label>
+                <input type="date" id="data_checkout" name="data_checkout" ">
+                
+                <label for="tipo_quarto">Tipo de Quarto:</label>
+                <select id="tipo_quarto" name="tipo_quarto">
+                    <option value="suite-luxo">Suíte Luxo</option>
+                    <option value="quarto-duplo-deluxe">Quarto Duplo Deluxe</option>
+                    <option value="quarto-individual-standard">Quarto Individual Standard</option>
+                </select>
+
+                <button type="submit">Reservar</button>
+            </form>
+
+            <h2>Depoimentos</h2>
+            <p>"O Hotel Charmoso Boutique é um verdadeiro achado! A decoração é impecável, o café da manhã delicioso e a equipe super atenciosa. Recomendo a todos que buscam uma experiência única no Rio." - Ana Paula</p>
+            <p>"Ambiente aconchegante e localização perfeita. Adoramos o terraço com vista para o mar! Voltaremos em breve." - Carlos e Fernanda</p>
+        </div>
+    </section>
+</main>
+<script src="header.js"></script>
+<script src="rodape.js"></script>
+
+</body>
+</html>
