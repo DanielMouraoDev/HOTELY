@@ -1,0 +1,16 @@
+{
+    "usuarios": [
+    {
+        "nome": "Daniel Mourão",
+        "senha": "frangolegal"
+    },
+    {
+        "nome": "Brebo",
+        "senha": "amoDarkSouls123"
+    },
+    {
+        "nome": "Bora Bill da Silva",
+        "senha": "laelereceba123"
+    }
+    ]
+}

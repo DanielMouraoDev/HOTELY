@@ -1,11 +1,5 @@
 /* styles.css */
-{
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-}
-
-body {
-  font-family: 'Roboto', sans-serif; /* Altera a fonte do corpo */
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 header {
   background-color: #2c3e50; /* Cor de fundo escura */
@@ -18,6 +12,29 @@ header {
 header h1 {
   font-size: 2.5em; /* Aumenta o tamanho da fonte */
   margin: 0; /* Remove a margem */
+}
+
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.horizontal li{
+  float: left;
+}
+
+ul.horizontal li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal li a.active{
+  background-color: #375777;
 }
 
 /* Estilo da navegação */
@@ -450,7 +467,7 @@ nav ul ul li {
 
 /* Estilos gerais da página */
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif; /* Altera a fonte do corpo */
   margin: 0;
   background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
   background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
