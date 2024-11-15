@@ -364,3 +364,80 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('criarContaForm');
+
+  form.addEventListener('submit', (event) => {
+      event.preventDefault();  // Previne o envio tradicional do formulário
+
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      if (!nome || !email || !senha) {
+          alert('Preencha todos os campos!');
+          return;
+      }
+
+      fetch('/criarconta', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              nome: nome,
+              email: email,
+              senha: senha
+          })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.message) {
+              alert(data.message);
+          }
+      })
+      .catch(err => {
+          console.error('Erro ao enviar dados:', err);
+          alert('Erro ao criar conta. Tente novamente.');
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('logarContaForm');
+
+  form.addEventListener('submit', (event) => {
+      event.preventDefault();  // Previne o envio tradicional do formulário
+
+      const email = document.getElementById('email').value;
+      const senha = document.getElementById('senha').value;
+
+      // Verifica se os campos não estão vazios
+      if (!email || !senha) {
+          alert('Por favor, preencha todos os campos!');
+          return;
+      }
+
+      // Enviar dados de login para o servidor
+      fetch('/login', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ email, senha })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.message) {
+              alert(data.message);  // Exibe o feedback do servidor
+          }
+          if (data.message === "Login bem-sucedido") {
+            window.location.href = 'index.html';
+          }
+      })
+      .catch(error => {
+          console.error('Erro ao tentar fazer login:', error);
+          alert('Erro ao tentar fazer login. Tente novamente.');
+      });
+  });
+});
