@@ -1,0 +1,19 @@
+{
+  "usuarios": [
+    {
+      "nome": "gilson",
+      "email": "gilson2312@eumail.com",
+      "senha": "$2b$10$Eit/SJTGjADk3pHdHMH5l.i7idFO8k3hDvqY0gAq.l0tJ0GlzEn26"
+    },
+    {
+      "nome": "add",
+      "email": "add@add.com",
+      "senha": "$2b$10$hpn0XEFUbCASoNoT9immgOw2h1oTO8Z2Ek2o87GoKFxLj78VCY0Si"
+    },
+    {
+      "nome": "bill",
+      "email": "usuariolegal@gmail.com",
+      "senha": "$2b$10$7ox.nAXJ7hsURj4CI775mO0yr2WvxTNiiPTVWpJ.7M7hhZK6X6tkm"
+    }
+  ]
+}

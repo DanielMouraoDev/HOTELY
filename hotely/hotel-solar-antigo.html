@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Solar Antigo - Seu Site de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8df0e0096.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<main>
+    <section id="hotel-solar-antigo">
+        <div class="container">
+            <h1>Hotel Solar Antigo</h1>
+
+            <div class="carousel"> 
+                <img src="IMAGENS/solar antigo 1.jpeg" alt="Foto 1 do Hotel Solar Antigo">
+                <img src="IMAGENS/solar antigo 2.jpeg" alt="Foto 2 do Hotel Solar Antigo">
+                <img src="IMAGENS/solar antigo 3.jpeg" alt="Foto 3 do Hotel Solar Antigo">
+            </div>
+
+            <p>Mergulhe na história do Rio neste charmoso hotel no centro da cidade, com arquitetura colonial e decoração de época. Uma viagem no tempo com todo o conforto e a elegância que você merece. Nossos quartos possuem móveis antigos restaurados e detalhes que preservam a atmosfera do século XIX. Desfrute do nosso jardim interno com chafariz e da nossa biblioteca com livros raros. Estamos a poucos passos de museus, teatros e restaurantes históricos.</p>
+
+            <h2>Comodidades</h2>
+            <ul>
+                <li>Jardim interno com chafariz</li>
+                <li>Biblioteca com livros raros</li>
+                <li>Wi-Fi gratuito</li>
+                <li>Café da manhã incluso</li>
+                <li>Quartos com decoração de época</li>
+                <li>Sala de estar com lareira</li>
+                <li>Recepção 24 horas</li>
+                <li>Serviço de quarto</li>
+            </ul>
+
+            <h2>Localização</h2>
+            <p>Rua do Ouvidor, 234 - Centro, Rio de Janeiro</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.091521415408!2d-43.1763320850224!3d-22.90867598501177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5153014e5d%3A0x7ff1c0ca1c64c3c0!2sR.%20do%20Ouvidor%2C%20234%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020040-030!5e0!3m2!1spt-BR!2sbr!4v1697412636620!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2>Contato</h2>
+            <p>Telefone: (21) 2468-0135</p>
+            <p>Email: contato@hotelsolarantigo.com</p>
+
+            <h2>Quartos e Preços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Quarto</th>
+                        <th>Descrição</th>
+                        <th>Preço por noite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quarto Imperial</td>
+                        <td>Quarto com cama king-size, dossel, móveis de época, ar-condicionado, Wi-Fi, TV a cabo e vista para o jardim interno.</td>
+                        <td>R$ 550</td>
+                    </tr>
+                    <tr>
+                        <td>Quarto Colonial</td>
+                        <td>Quarto com cama de casal ou duas camas de solteiro, móveis de época, ar-condicionado, Wi-Fi e TV a cabo.</td>
+                        <td>R$ 400</td>
+                    </tr>
+                    <tr>
+                        <td>Quarto Standard</td>
+                        <td>Quarto com cama de solteiro, móveis de época, ventilador de teto e Wi-Fi.</td>
+                        <td>R$ 250</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Formulário de Reserva</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data_checkin">Data de Check-in:</label>
+                <input type="date" id="data_checkin" name="data_checkin" >
+
+                <label for="data_checkout">Data de Check-out:</label>
+                <input type="date" id="data_checkout" name="data_checkout" >
+
+                <label for="tipo_quarto">Tipo de Quarto:</label>
+                <select id="tipo_quarto" name="tipo_quarto">
+                    <option value="imperial">Quarto Imperial</option>
+                    <option value="colonial">Quarto Colonial</option>
+                    <option value="standard">Quarto Standard</option>
+                </select>
+
+                <button type="submit">Reservar</button>
+            </form>
+
+            <h2>Depoimentos</h2>
+            <p>"Uma experiência única! O Hotel Solar Antigo é um lugar encantador, com uma atmosfera que nos transporta para o passado. O quarto era lindo e aconchegante, e o café da manhã delicioso." - Laura</p>
+            <p>"Adoramos a estadia! O hotel é charmoso, a equipe é atenciosa e a localização é perfeita para explorar o centro histórico do Rio. Recomendo!" - Pedro e família</p>
+        </div>
+    </section>
+</main>
+
+<script src="header.js"></script>
+<script src="rodape.js"></script>
+
+</body>
+</html>

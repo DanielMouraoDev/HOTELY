@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Família Feliz - Seu Site de Reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <script src="https://kit.fontawesome.com/c8df0e0096.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+<main>
+    <section id="hotel-familia-feliz">
+        <div class="container">
+            <h1>Hotel Família Feliz</h1>
+
+            <div class="carousel"> 
+                <img src="IMAGENS/famia feliz 1.jpeg" alt="Foto 1 do Hotel Família Feliz">
+                <img src="IMAGENS/familia feliz 2.jpeg" alt="Foto 2 do Hotel Família Feliz">
+                <img src="IMAGENS/familia feliz 3.jpeg" alt="Foto 3 do Hotel Família Feliz">
+            </div>
+
+            <p>Diversão garantida para toda a família neste hotel com área de lazer completa, piscina infantil, playground e recreação monitorada. Próximo à praia de Copacabana, oferece conforto e praticidade para sua viagem em família. Nossos quartos são amplos e acomodam até 4 pessoas, com opções de camas extras e berços. Oferecemos também serviços de babá e aluguel de carrinhos de bebê. Aproveite o nosso restaurante com menu kids e a nossa programação de atividades para todas as idades.</p>
+
+            <h2>Comodidades</h2>
+            <ul>
+                <li>Piscina infantil</li>
+                <li>Playground</li>
+                <li>Recreação monitorada</li>
+                <li>Restaurante com menu kids</li>
+                <li>Serviço de babá</li>
+                <li>Aluguel de carrinhos de bebê</li>
+                <li>Quartos familiares</li>
+                <li>Wi-Fi gratuito</li>
+                <li>Copa do bebê</li>
+                <li>Berço e cama extra (sob demanda)</li>
+            </ul>
+
+            <h2>Localização</h2>
+            <p>Rua Barata Ribeiro, 890 - Copacabana, Rio de Janeiro</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.139463439088!2d-43.18188758502238!3d-22.970932385008747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e513d000977%3A0x5a988e5dcd5f1f91!2sR.%20Barata%20Ribeiro%2C%20890%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022040-002!5e0!3m2!1spt-BR!2sbr!4v1697411786967!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <h2>Contato</h2>
+            <p>Telefone: (21) 4321-0987</p>
+            <p>Email: contato@hotelfamiliafeliz.com</p>
+
+            <h2>Quartos e Preços</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Quarto</th>
+                        <th>Descrição</th>
+                        <th>Preço por noite</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Quarto Família</td>
+                        <td>Quarto com duas camas de casal, ideal para famílias com até 4 pessoas, com opção de cama extra e berço.</td>
+                        <td>R$ 450</td>
+                    </tr>
+                    <tr>
+                        <td>Quarto Triplo</td>
+                        <td>Quarto com três camas de solteiro, ideal para famílias com até 3 pessoas.</td>
+                        <td>R$ 380</td>
+                    </tr>
+                    <tr>
+                        <td>Quarto Duplo</td>
+                        <td>Quarto com uma cama de casal, ideal para casais com até 1 criança (berço disponível).</td>
+                        <td>R$ 300</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Formulário de Reserva</h2>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="data_checkin">Data de Check-in:</label>
+                <input type="date" id="data_checkin" name="data_checkin" >
+
+                <label for="data_checkout">Data de Check-out:</label>
+                <input type="date" id="data_checkout" name="data_checkout" >
+
+                <label for="tipo_quarto">Tipo de Quarto:</label>
+                <select id="tipo_quarto" name="tipo_quarto">
+                    <option value="quarto-familia">Quarto Família</option>
+                    <option value="quarto-triplo">Quarto Triplo</option>
+                    <option value="quarto-duplo">Quarto Duplo</option>
+                </select>
+
+                <button type="submit">Reservar</button>
+            </form>
+
+            <h2>Depoimentos</h2>
+            <p>"O Hotel Família Feliz é perfeito para quem viaja com crianças! Tem piscina, playground, recreação... Meus filhos adoraram! E o quarto família é super espaçoso e confortável." - Juliana</p>
+            <p>"Adoramos a estadia! A equipe é muito atenciosa e o hotel tem tudo o que uma família precisa para se sentir em casa. Recomendo!" - Roberto e família</p>
+        </div>
+    </section>
+</main>
+<script src="header.js"></script>
+<script src="rodape.js"></script>
+
+</body>
+</html>

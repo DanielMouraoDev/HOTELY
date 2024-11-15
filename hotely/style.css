@@ -1,0 +1,1196 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+header {
+  background-color: #2c3e50; /* Cor de fundo escura */
+  color: white; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+header h1 {
+  font-size: 2.5em; /* Aumenta o tamanho da fonte */
+  margin: 0; /* Remove a margem */
+}
+
+.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.horizontal li{
+  float: left;
+}
+
+ul.horizontal li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal li a.active{
+  background-color: #375777;
+}
+
+/* Estilo da navegação */
+nav {
+  margin-top: 15px; /* Espaçamento entre o título e a navegação */
+}
+
+header nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Organiza os itens em linha */
+  justify-content: space-around; /* Distribui os itens com espaçamento */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+header nav li a {
+  color: #333; /* Cor do texto do link */
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-weight: bold; /* Define o texto em negrito */
+  padding: 10px; /* Adiciona espaçamento interno ao link */
+  transition: color 0.3s ease; /* Adiciona uma transição suave à cor do link */
+}
+
+header nav li a:hover {
+  color: #007bff; /* Muda a cor do link ao passar o mouse */
+}
+
+/* CSS para telas menores (exemplo) */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column; /* Organiza os itens em coluna */
+  }
+}
+
+  
+  nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  nav a:hover {
+    color: #007bff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra ao texto */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do texto */
+  }
+
+  /* Estilos do menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Estilos do submenu */
+nav ul ul {
+  display: none; /* Esconde o submenu inicialmente */
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+nav li:hover ul {
+  display: block; /* Mostra o submenu ao passar o mouse */
+}
+
+nav ul ul li {
+  float: none;
+  display: block;
+}
+ 
+ #banner {
+  position: relative; /* Define o banner como referência para o posicionamento do texto */
+}
+
+#banner img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do banner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+#banner .texto-banner {
+  position: absolute; /* Posiciona o texto de forma absoluta em relação ao banner */
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o posicionamento para o centro exato */
+  color: #fff; /* Cor do texto (branco para contraste com a imagem) */
+  font-size: 3em; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+}
+#banner { 
+  text-align: center; /* Centraliza o texto dentro da seção do banner */
+}
+/* Estilos da seção de pesquisa */
+#pesquisa {
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+#pesquisa h2 {
+  color: #003580; /* Cor do título */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#formulario-pesquisa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formulario-pesquisa label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#formulario-pesquisa input,
+#formulario-pesquisa select {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+#formulario-pesquisa button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formulario-pesquisa button:hover {
+  background-color: #0056b3;
+}
+.destaque img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease; /* Adiciona uma transição suave */
+}
+.destaque img:hover {
+  animation: neon 1s ease-in-out forwards;
+  cursor: pointer; /* Adiciona o cursor pointer */
+}
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0); /* Começa com opacidade 0 */
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 1); /* Termina com opacidade 1 */
+  }
+}
+.destaque img:hover {
+  animation: neon 1s ease-in-out forwards; /* Aplica a animação "neon" com duração de 1 segundo */
+}
+.destaques { /* Contêiner dos destaques */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribui os cards com espaçamento entre eles */
+}
+
+.destaque {
+  width: 30%; /* Define a largura de cada card */
+  margin-bottom: 20px; /* Espaçamento entre os cards */
+}
+.destaque p {
+  word-wrap: break-word; /* Quebra a linha automaticamente */
+}
+.destaque {
+  /* ... seus estilos atuais ... */
+  border: 1px solid #ddd; /* Adiciona uma borda sutil */
+  padding: 15px; /* Adiciona espaçamento interno */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+}
+
+.destaque h3 {
+  margin-bottom: 5px; /* Adiciona espaçamento inferior ao título */
+}
+
+.destaque p {
+  font-size: 14px; /* Define o tamanho da fonte do texto */
+  line-height: 1.4; /* Define o espaçamento entre linhas do texto */
+  margin-bottom: 10px; /* Adiciona espaçamento inferior ao texto */
+}
+
+.destaque .botao {
+  display: inline-block; /* Transforma o link em um elemento de bloco */
+  padding: 8px 15px; /* Adiciona espaçamento interno ao botão */
+  background-color: #007bff; /* Define a cor de fundo do botão */
+  color: #fff; /* Define a cor do texto do botão */
+  text-decoration: none; /* Remove a decoração do link */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave à cor de fundo */
+}
+
+.destaque .botao:hover {
+  background-color: #0056b3; /* Define a cor de fundo do botão ao passar o mouse */
+}
+#ofertas-rotativas {
+  padding: 20px; /* Espaçamento interno da seção */
+  text-align: center; /* Centraliza o título */
+}
+
+#ofertas-rotativas h2 {
+  margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+#ofertas-rotativas .container {
+  display: flex; /* Usa flexbox para organizar as ofertas */
+  justify-content: space-around; /* Distribui as ofertas com espaçamento entre elas */
+}
+
+#ofertas-rotativas .oferta {
+  width: 30%; /* Define a largura de cada oferta */
+  border: 1px solid #ccc; /* Adiciona uma borda */
+  padding: 15px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+#ofertas-rotativas .oferta img {
+  max-width: 100%; /* Faz a imagem ocupar a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 10px; /* Espaçamento inferior da imagem */
+}
+
+#ofertas-rotativas .oferta h3 {
+  margin-bottom: 10px; /* Espaçamento inferior do título */
+}
+
+#ofertas-rotativas .oferta p {
+  margin-bottom: 15px; /* Espaçamento inferior do texto */
+}
+#ofertas-rotativas .botao:hover {
+  background-color: #0056b3; /* Define a cor de fundo do botão ao passar o mouse */
+}
+#ofertas-rotativas .botao {
+  display: inline-block; /* Transforma o link em um elemento de bloco */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  text-decoration: none; /* Remove a decoração do link */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+#ofertas-rotativas .botao {
+  /* ... outros estilos ... */
+  margin: 0 auto; /* Centraliza o botão horizontalmente */
+}
+
+#ofertas-rotativas .oferta {
+  /* ... outros estilos ... */
+  text-align: center; /* Centraliza o conteúdo do card */
+}
+/* Estilos para a seção de ofertas */
+#ofertas-rotativas .oferta {
+  opacity: 0; /* Inicialmente invisível */
+  transform: scale(0.9); /* Escala inicial menor */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+}
+
+#ofertas-rotativas .oferta.visivel {
+  opacity: 1; /* Visível quando a classe "visivel" for adicionada */
+  transform: scale(1); /* Escala normal */
+}
+
+  #dicas-uteis p {
+    text-align: center;
+  }
+  #dicas-uteis {
+    padding: 20px; /* Adiciona espaçamento interno à seção */
+  }
+  
+  #dicas-uteis h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior ao título */
+  }
+  
+  #dicas-uteis ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+  }
+  
+  #dicas-uteis li {
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
+  }
+  
+  #dicas-uteis a {
+    color: #007bff; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Adiciona uma transição suave à cor do link */
+  }
+  
+  #dicas-uteis a:hover {
+    color: #0056b3; /* Muda a cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+  #dicas-uteis h3 i {
+    font-size: 18px; /* Define o tamanho do ícone */
+    margin-left: 5px; /* Adiciona um espaçamento à esquerda do ícone */
+    color: #007bff; /* Define a cor do ícone */
+  }
+  #dicas-uteis nav {
+    padding: 15px; /* Adiciona espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  #dicas-uteis ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+  }
+  
+  #dicas-uteis li {
+    margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
+  }
+  
+  #dicas-uteis ul ul {
+    margin-left: 20px; /* Adiciona recuo para as listas aninhadas */
+    margin-top: 01px; /* Adiciona espaçamento superior para as listas aninhadas */
+  }
+  
+  #dicas-uteis ul ul li {
+    margin-bottom: 5px; /* Reduz o espaçamento entre os subitens */
+  }
+  
+  #dicas-uteis a {
+    color: #007bff; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Adiciona uma transição suave à cor do link */
+  }
+  
+  #dicas-uteis a:hover {
+    color: #0056b3; /* Muda a cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+  
+  #dicas-uteis h3 i {
+    font-size: 18px; /* Define o tamanho do ícone */
+    margin-left: 5px; /* Adiciona um espaçamento à esquerda do ícone */
+    color: #007bff; /* Define a cor do ícone */
+  }
+  
+  #dicas-uteis ul ul li i {
+    font-size: 14px; /* Define o tamanho do ícone dos subitens */
+    margin-right: 5px; /* Adiciona um espaçamento à direita do ícone */
+  }
+  /* Estilizando o botão de busca */
+  #busca button {
+    /* Define a cor de fundo */
+    background-color: #4CAF50;
+  
+    /* Define a cor do texto */
+    color: white;
+  
+    /* Adiciona espaço interno para o texto */
+    padding: 10px 20px;
+  
+    /* Remove a borda */
+    border: none;
+  
+    /* Arredonda as bordas */
+    border-radius: 3px;
+  
+    /* Define o cursor para indicar que é clicável */
+    cursor: pointer;
+  }
+  footer {
+    background-color: #525050; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+  }
+  footer {
+    text-align: center; /* centralizar conteudo do rodape */
+    padding: 20px; /* para que o conteúdo não fique colado nas bordas.*/
+  }
+  
+  footer .container { /* separar elementos em coluna */
+    display: flex;
+    justify-content: space-between;
+  }
+  footer a {
+    color: #d8dfe6; /* Cor branca para os links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Adiciona uma transição suave à cor do link */
+  }
+  
+  footer a:hover {
+    color: #3472b4; /* Cor azul ao passar o mouse */
+  }
+  footer .redes-sociais a {
+    font-size: 24px;
+    margin: 0 10px; /* Adiciona espaçamento entre os ícones */
+  }
+  @media (max-width: 768px) { /* RESPONSIVIDADE DO RODAPE */
+    footer .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* Estilos gerais da página */
+body {
+  font-family: 'Roboto', sans-serif; /* Altera a fonte do corpo */
+  margin: 0;
+  background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
+  background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
+}
+
+#sobre-nos {
+  padding: 20px;
+  text-align: center;
+}
+
+#sobre-nos h1 {
+  margin-bottom: 20px;
+}
+
+/* Estilos dos títulos das seções */
+#sobre-nos h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #e9ecef; /* Cor de fundo do título */
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Estilos dos fundos quadrados de cada seção */
+#sobre-nos div:nth-child(2) { /* Seção "Sobre Nós" */
+  background-color: #e9ecef; /* Cor de fundo azul claro */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#sobre-nos div:nth-child(3) { /* Seção "Nosso Propósito" */
+  background-color: #f8f9fa; /* Cor de fundo cinza claro */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#sobre-nos div:nth-child(4) { /* Seção "Nossos Valores" */
+  background-color: #dee2e6; /* Cor de fundo cinza mais claro */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Estilos dos parágrafos */
+#sobre-nos p {
+  text-align: center; /* Centraliza o texto do parágrafo */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Estilos da lista */
+#sobre-nos ul {
+  list-style: disc;
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  margin-bottom: 20px;
+}
+
+#sobre-nos li {
+  margin-bottom: 10px;
+}
+
+/* Estilos da imagem */
+#sobre-nos img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos dos links */
+#sobre-nos a {
+  color: #50657a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#sobre-nos a:hover {
+  color: #0056b3;
+}
+  /* Estilos gerais da página */
+#contato {
+  font-family: Arial, sans-serif; /* Fonte similar à usada no Booking.com */
+  padding: 30px;
+  background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+#contato h1 {
+  color: #003580; /* Cor principal do Booking.com */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contato p {
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura */
+}
+
+/* Estilos do formulário */
+#contato form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da; /* Cor de borda suave */
+  border-radius: 3px;
+}
+
+#contato textarea {
+  height: 150px;
+}
+
+#contato button {
+  background-color: #003580; /* Cor principal do Booking.com */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+  background-color: #002d69; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilos das outras formas de contato */
+#contato h2 {
+  margin-top: 30px;
+  color: #003580;
+}
+/* Estilos gerais da página do hotel */
+#hotel-vista-mar {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  text-align: center; /* Centraliza o conteúdo da página */
+}
+
+#hotel-vista-mar h1 {
+  color: #003580; /* Cor principal do Booking.com */
+  margin-bottom: 20px;
+}
+
+#hotel-vista-mar .container {
+  max-width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilos do carrossel de imagens (ajuste conforme necessário) */
+#hotel-vista-mar .carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hotel-vista-mar .carousel img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+}
+
+/* Estilos dos parágrafos */
+#hotel-vista-mar p {
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura */
+  margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+#hotel-vista-mar ul {
+  list-style: disc;
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  margin-bottom: 20px;
+}
+
+#hotel-vista-mar li {
+  margin-bottom: 10px;
+}
+
+/* Estilos da tabela de preços */
+#hotel-vista-mar table {
+  width: 100%;
+  border-collapse: collapse; /* Junta as bordas das células */
+  margin-bottom: 20px;
+}
+
+#hotel-vista-mar th,
+#hotel-vista-mar td {
+  border: 1px solid #ddd; /* Adiciona bordas à tabela */
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos do mapa */
+#hotel-vista-mar iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Estilos dos títulos das seções */
+#hotel-vista-mar h2 {
+  color: #003580; /* Cor principal do Booking.com */
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos links */
+#hotel-vista-mar a {
+  color: #007bff; /* Cor azul para os links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#hotel-vista-mar a:hover {
+  color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+}
+
+
+
+#hotel-vista-mar {
+
+  background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
+  background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
+}
+
+#hotel-vista-mar .carousel img {
+ 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra com blur de 10px e cor preta semi-transparente */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+/* Estilos gerais da página do hotel */
+#hotel-charmoso-boutique {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
+  background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
+  text-align: center; /* Centraliza o conteúdo da página */
+}
+
+#hotel-charmoso-boutique h1 {
+  color: #003580; /* Cor principal do Booking.com */
+  margin-bottom: 20px;
+}
+
+#hotel-charmoso-boutique .container {
+  max-width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilos do carrossel de imagens (ajuste conforme necessário) */
+#hotel-charmoso-boutique .carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hotel-charmoso-boutique .carousel img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra com blur de 10px e cor preta semi-transparente */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+
+/* Estilos dos parágrafos */
+#hotel-charmoso-boutique p {
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura */
+  margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+#hotel-charmoso-boutique ul {
+  list-style: disc;
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  margin-bottom: 20px;
+}
+
+#hotel-charmoso-boutique li {
+  margin-bottom: 10px;
+}
+
+/* Estilos da tabela de preços */
+#hotel-charmoso-boutique table {
+  width: 100%;
+  border-collapse: collapse; /* Junta as bordas das células */
+  margin-bottom: 20px;
+}
+
+#hotel-charmoso-boutique th,
+#hotel-charmoso-boutique td {
+  border: 1px solid #ddd; /* Adiciona bordas à tabela */
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos do mapa */
+#hotel-charmoso-boutique iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Estilos dos títulos das seções */
+#hotel-charmoso-boutique h2 {
+  color: #003580;   
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos links */
+#hotel-charmoso-boutique a {
+  color: #007bff; /* Cor azul para os links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#hotel-charmoso-boutique a:hover {
+  color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+}
+/* Estilos gerais da página do hotel */
+#hotel-familia-feliz {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
+  background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
+  text-align: center; /* Centraliza o conteúdo da página */
+}
+
+#hotel-familia-feliz h1 {
+  color: #003580; /* Cor principal */
+  margin-bottom: 20px;
+}
+
+#hotel-familia-feliz .container {
+  max-width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilos do carrossel de imagens (ajuste conforme necessário) */
+#hotel-familia-feliz .carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hotel-familia-feliz .carousel img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra com blur de 10px e cor preta semi-transparente */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+
+/* Estilos dos parágrafos */
+#hotel-familia-feliz p {
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura */
+  margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+#hotel-familia-feliz ul {
+  list-style: disc;
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  margin-bottom: 20px;
+}
+
+#hotel-familia-feliz li {
+  margin-bottom: 10px;
+}
+
+/* Estilos da tabela de preços */
+#hotel-familia-feliz table {
+  width: 100%;
+  border-collapse: collapse; /* Junta as bordas das células */
+  margin-bottom: 20px;
+}
+
+#hotel-familia-feliz th,
+#hotel-familia-feliz td {
+  border: 1px solid #ddd; /* Adiciona bordas à tabela */
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos do mapa */
+#hotel-familia-feliz iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Estilos dos títulos das seções */
+#hotel-familia-feliz h2 {
+  color: #003580; /* Cor principal */
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos links */
+#hotel-familia-feliz a {
+  color: #007bff; /* Cor azul para os links */
+}
+/* Estilos gerais da página do hotel */
+#hotel-bom-preco {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
+  background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
+  text-align: center; /* Centraliza o conteúdo da página */
+}
+
+#hotel-bom-preco h1 {
+  color: #003580; /* Cor principal do Booking.com */
+  margin-bottom: 20px;
+}
+
+#hotel-bom-preco .container {
+  max-width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilos do carrossel de imagens (ajuste conforme necessário) */
+#hotel-bom-preco .carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hotel-bom-preco .carousel img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra com blur de 10px e cor preta semi-transparente */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+
+/* Estilos dos parágrafos */
+#hotel-bom-preco p {
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura */
+  margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+#hotel-bom-preco ul {
+  list-style: disc;
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  margin-bottom: 20px;
+}
+
+#hotel-bom-preco li {
+  margin-bottom: 10px;
+}
+
+/* Estilos da tabela de preços */
+#hotel-bom-preco table {
+  width: 100%;
+  border-collapse: collapse; /* Junta as bordas das células */
+  margin-bottom: 20px;
+}
+
+#hotel-bom-preco th,
+#hotel-bom-preco td {
+  border: 1px solid #ddd; /* Adiciona bordas à tabela */
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos do mapa */
+#hotel-bom-preco iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Estilos dos títulos das seções */
+#hotel-bom-preco h2 {
+  color: #003580; /* Cor principal*/
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos links */
+#hotel-bom-preco a {
+  color: #007bff; /* Cor azul para os links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#hotel-bom-preco a:hover {
+  color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+}
+/* Estilos gerais da página do hotel */
+#hotel-solar-antigo {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to bottom, #e0ffff, #f0f8ff, #e0ffff); /* Gradiente suave de azul */
+  background-attachment: fixed; /* Fixa o fundo para criar o efeito de rolagem */
+  text-align: center; /* Centraliza o conteúdo da página */
+}
+
+#hotel-solar-antigo h1 {
+  color: #003580; /* Cor principal do Booking.com */
+  margin-bottom: 20px;
+}
+
+#hotel-solar-antigo .container {
+  max-width: 960px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+}
+
+/* Estilos do carrossel de imagens (ajuste conforme necessário) */
+#hotel-solar-antigo .carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hotel-solar-antigo .carousel img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra com blur de 10px e cor preta semi-transparente */
+  margin: 10px; /* Espaçamento entre as imagens */
+}
+
+/* Estilos dos parágrafos */
+#hotel-solar-antigo p {
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura */
+  margin-bottom: 15px;
+}
+
+/* Estilos das listas */
+#hotel-solar-antigo ul {
+  list-style: disc;
+  text-align: left; /* Alinha o texto da lista à esquerda */
+  margin-bottom: 20px;
+}
+
+#hotel-solar-antigo li {
+  margin-bottom: 10px;
+}
+
+/* Estilos da tabela de preços */
+#hotel-solar-antigo table {
+  width: 100%;
+  border-collapse: collapse; /* Junta as bordas das células */
+  margin-bottom: 20px;
+}
+
+#hotel-solar-antigo th,
+#hotel-solar-antigo td {
+  border: 1px solid #ddd; /* Adiciona bordas à tabela */
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilos do mapa */
+#hotel-solar-antigo iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* Estilos dos títulos das seções */
+#hotel-solar-antigo h2 {
+  color: #003580; /* Cor principal*/
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Estilos dos links */
+#hotel-solar-antigo a {
+  color: #007bff; /* Cor azul para os links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#hotel-solar-antigo a:hover {
+  color: #0056b3; /* Cor azul mais escura ao passar o mouse */
+}
+/* Estilos da seção de hotéis */
+#lista-hoteis {
+  display: flex; /* Usa flexbox para organizar os cards */
+  flex-wrap: wrap; /* Permite que os cards quebrem em várias linhas */
+  justify-content: space-between; /* Distribui os cards com espaçamento entre eles */
+  padding: 20px; /* Adiciona espaçamento interno à seção */
+}
+
+/* Estilos dos cards */
+.destaque {
+  width: 31%; /* Define a largura de cada card */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior aos cards */
+  border: 1px solid #ddd; /* Adiciona uma borda sutil */
+  padding: 15px; /* Adiciona espaçamento interno */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  overflow: hidden; /* Impede que o conteúdo extravase */
+}
+
+.destaque img {
+  max-width: 100%; /* Faz a imagem ocupar a largura do card */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+  margin-bottom: 10px; /* Adiciona espaçamento inferior à imagem */
+}
+
+.destaque h3 {
+  margin-bottom: 5px; /* Adiciona espaçamento inferior ao título */
+}
+
+.destaque p {
+  font-size: 14px; /* Define o tamanho da fonte do texto */
+  line-height: 1.4; /* Define o espaçamento entre linhas do texto */
+  margin-bottom: 10px; /* Adiciona espaçamento inferior ao texto */
+}
+
+.destaque .botao {
+  display: inline-block; /* Transforma o link em um elemento de bloco */
+  padding: 8px 15px; /* Adiciona espaçamento interno ao botão */
+  background-color: #007bff; /* Define a cor de fundo do botão */
+  color: #fff; /* Define a cor do texto do botão */
+  text-decoration: none; /* Remove a decoração do link */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave à cor de fundo */
+}
+
+.destaque .botao:hover {
+  background-color: #0056b3; /* Define a cor de fundo do botão ao passar o mouse */
+}
+#lista-hoteis .destaque-centralizado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto; /* Centraliza horizontalmente com margem automática */
+}
+
+/* Estilos do carrossel */
+.swiper {
+  width: 60%; /* Largura do carrossel */
+  margin: 50px auto; /* Margem superior e inferior de 30px, centralizado horizontalmente */
+}
+
+.swiper-slide {
+  text-align: center; /* Centraliza o conteúdo do slide */
+  font-size: 18px; /* Tamanho da fonte da legenda */
+  background: #fff; /* Cor de fundo do slide */
+  /* ... outros estilos ... */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 300px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Faz com que a imagem cubra toda a área do slide */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos da paginação */
+.swiper-pagination-bullet {
+  background-color: #aabccf; /* Cor dos indicadores de paginação */
+  opacity: 0.5; /* Opacidade dos indicadores */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Opacidade do indicador ativo */
+}
+
+/* Estilos dos botões de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #9dafc2; /* Cor dos botões */
+  font-size: 24px; /* Tamanho dos botões */
+}
+
+/* Adiciona uma transição suave aos slides */
+.swiper-slide {
+  transition: transform 0.5s ease; /* Transição suave de 0.5 segundos */
+}
+
+/* Estilos da lista de sugestões */
+.sugestoes {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin-top: 2px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.sugestoes li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sugestoes li:hover {
+  background-color: #f0f0f0;
+}
